@@ -6,7 +6,7 @@ module.exports = function(config) {
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
     basePath: '/home/ymas/workspace/javascript/hypervalidator/',
-		modulesRoot: '/home/ymas/workspace/javascript/hypervalidator/node_modules/',
+    modulesRoot: '/home/ymas/workspace/javascript/hypervalidator/node_modules/',
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
@@ -15,32 +15,32 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-			'dist/src/**/*.js',
+      'dist/src/**/*.js',
       'dist/test/**/*.js',
-		],
+    ],
 
 
     // list of files / patterns to exclude
     exclude: [
     ],
 
-		plugins: [
-			'karma-jasmine',
-			'karma-webpack',
-			'karma-jasmine-html-reporter'
-		],
-		client: {
-			clearContext: false,
-		},
-		webpack: {
-			mode: 'development'
-		},
+    plugins: [
+      'karma-jasmine',
+      'karma-webpack',
+      'karma-jasmine-html-reporter'
+    ],
+    client: {
+      clearContext: false,
+    },
+    webpack: {
+      mode: 'development'
+    },
 
 
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-			'dist/**/*.js': ['webpack'],
+      'dist/**/*.js': ['webpack'],
     },
 
 
