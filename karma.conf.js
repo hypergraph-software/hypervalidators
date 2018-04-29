@@ -5,8 +5,7 @@ module.exports = function(config) {
   config.set({
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
-    basePath: '/home/ymas/workspace/javascript/hypervalidator/',
-    modulesRoot: '/home/ymas/workspace/javascript/hypervalidator/node_modules/',
+    basePath: '',
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
